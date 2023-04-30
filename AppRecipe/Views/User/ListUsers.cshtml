@@ -1,0 +1,43 @@
+﻿@model List<User>
+@{
+    ViewData["Title"] = "User List";
+}
+<div class="d-flex justify-content-center">
+    <h1>@ViewData["Title"]</h1>
+</div>
+
+<a type="button" class="btn btn-primary" asp-controller="Backoffice" asp-action="Create">Create user</a>
+<br />
+<br />
+<table class="table">
+    <thead>
+        <tr>
+           @* <th>#</th>*@
+            <th>Name</th>
+            <th>E-mail</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        @foreach (var user in Model)
+        {
+            <tr>
+               @* <td>@user.Id</td>*@
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+                <td>
+                    <a href="@Url.Action("EditUser", "User", new { id = user.Id })">Edit</a>
+                </td>
+                <td>
+                    <a href="@Url.Action("DeleteUser", "User", new { id = user.Id })" class="delete-user-link">Delete</a>
+                </td>
+
+                <td>
+                    <a href="@Url.Action("Block", "User", new { id = user.Id })">Block</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="@Url.Action("Backoffice", "Backoffice")" class="btn btn-secondary">Back to Backoffice</a>

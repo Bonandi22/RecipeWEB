@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<link rel="stylesheet" href="/css/Contact.css">
+
+<h1 class="text-center">@ViewData["Title"]</h1>
+<br />
+<br />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Company Information</h2>
+            <br />
+            <p>Address: 123 Main St.</p>
+            <p>Phone: (555) 555-5555</p>
+            <p>Email: info@recipes.com</p>
+            <p>Follow us on social media:</p>
+            <ul class="d-flex gap-3 list-unstyled">
+                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h2>Contact Form</h2>
+            <br />
+            <form>
+                <div class="form-group">
+                    <label for="nameInput">Name</label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="emailInput">Email address</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="messageInput">Message</label>
+                    <textarea class="Messagem" id="messageInput" placeholder="Enter your message"  rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

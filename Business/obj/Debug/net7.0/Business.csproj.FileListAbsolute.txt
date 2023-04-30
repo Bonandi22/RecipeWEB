@@ -1,0 +1,17 @@
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Business\bin\Debug\net7.0\Business.deps.json
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Business\bin\Debug\net7.0\Business.dll
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Business\bin\Debug\net7.0\Business.pdb
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Business\bin\Debug\net7.0\Common.dll
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Business\bin\Debug\net7.0\Database.dll
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Business\bin\Debug\net7.0\Common.pdb
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Business\bin\Debug\net7.0\Database.pdb
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Business\obj\Debug\net7.0\Business.csproj.AssemblyReference.cache
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Business\obj\Debug\net7.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Business\obj\Debug\net7.0\Business.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Business\obj\Debug\net7.0\Business.AssemblyInfo.cs
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Business\obj\Debug\net7.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Business\obj\Debug\net7.0\Business.csproj.CopyComplete
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Business\obj\Debug\net7.0\Business.dll
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Business\obj\Debug\net7.0\refint\Business.dll
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Business\obj\Debug\net7.0\Business.pdb
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Business\obj\Debug\net7.0\ref\Business.dll

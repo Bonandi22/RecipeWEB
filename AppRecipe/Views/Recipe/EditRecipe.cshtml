@@ -1,0 +1,44 @@
+﻿@model Recipe
+@{
+    ViewData["Title"] = "Edit Recipe";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/UserList.css">
+
+<div class="d-flex justify-content-center">
+    <h1>@ViewData["Title"]</h1>
+</div>
+
+<br />
+<br />
+
+<form asp-controller="Recipe" asp-action="EditRecipe" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group mx-auto" style="width: 50%;">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group mx-auto" style="width: 50%;">
+        <label asp-for="Description"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group mx-auto" style="width: 50%;">
+        <label asp-for="PrepationMethod"></label>
+        <input asp-for="PrepationMethod" class="form-control" />
+        <span asp-validation-for="PrepationMethod" class="text-danger"></span>
+    </div>
+    <div class="form-group mx-auto" style="width: 50%;">
+        <label asp-for="PreparationTime"></label>
+        <input asp-for="PreparationTime" class="form-control" />
+        <span asp-validation-for="PreparationTime" class="text-danger"></span>
+        <br />
+        <div class="d-inline justify-content-center">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a href="@Url.Action("ListRecipe", "Recipe")" class="btn btn-secondary">Back to list</a>
+        </div>
+
+    </div>    
+
+</form>

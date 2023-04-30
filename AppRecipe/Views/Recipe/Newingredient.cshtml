@@ -1,0 +1,74 @@
+﻿@model Ingredient
+@{
+    ViewData["Title"] = "New Ingredient";
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/StyleLogin.css">
+
+<div class="d-flex justify-content-center">
+    <h1>@ViewData["Title"]</h1>
+</div>
+
+@*<div class="d-flex justify-content-center">
+    <div class="col-md-4">
+        <form asp-controller="Recipe" asp-action="Newingredient" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <!-- Name input -->
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input type="text" asp-for="Name" class="form-control" placeholder="Enter Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <!-- Description input -->
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input type="text" asp-for="Description" class="form-control" placeholder="Enter Description" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <!-- PrepationMethod input -->
+            <div class="form-group">
+                <label asp-for="PrepationMethod" class="control-label"></label>
+                <input type="text" asp-for="PrepationMethod" class="form-control" placeholder="Enter PrepationMethod" />
+                <span asp-validation-for="PrepationMethod" class="text-danger"></span>
+            </div>
+            <!-- PrepationMethod input -->
+            <div class="form-group">
+                <label asp-for="PreparationTime" class="control-label"></label>
+                <input type="text" asp-for="PreparationTime" class="form-control" placeholder="Enter PreparationTime" />
+                <span asp-validation-for="PreparationTime" class="text-danger"></span>
+            </div>
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach (var modelState in ViewData.ModelState.Values)
+                        {
+                            foreach (var error in modelState.Errors)
+                            {
+                                <li>@error.ErrorMessage</li>
+                            }
+                        }
+                    </ul>
+                </div>
+            }
+            @if (ViewBag.ErrorMessage != null)
+            {
+                <div class="alert alert-danger">
+                    @ViewBag.ErrorMessage
+                </div>
+            }
+            <br />
+            <!-- Submit button -->
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Create</button>
+            </div>
+        </form>
+    </div>
+</div>
+*@<br />
+<div class="d-flex justify-content-center">
+    <a href="@Url.Action("ListRecipe", "Recipe")" class="btn btn-secondary">Back to List</a>
+</div>
+
+

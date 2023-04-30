@@ -1,0 +1,12 @@
+﻿@model Rating
+
+<h1>delete Rating</h1>
+
+<p>Are you sure you want to delete the Rating @Model.UserName (@Model.UserEmail)?</p>
+
+<form asp-controller="Rating" asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="@Url.Action("ListRating", "Rating")" class="btn btn-secondary">Back to list</a>
+</form>

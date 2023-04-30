@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppRecipe", "AppRecipe\AppRecipe.csproj", "{D5DE2E07-FA95-45C0-A988-F1B7A8416013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{6670F5FF-CC8B-41A1-81D1-67BDFFCF381B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{93F6A408-6B7F-4805-A5AD-A9D10372E042}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5DE2E07-FA95-45C0-A988-F1B7A8416013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5DE2E07-FA95-45C0-A988-F1B7A8416013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5DE2E07-FA95-45C0-A988-F1B7A8416013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5DE2E07-FA95-45C0-A988-F1B7A8416013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6670F5FF-CC8B-41A1-81D1-67BDFFCF381B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6670F5FF-CC8B-41A1-81D1-67BDFFCF381B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6670F5FF-CC8B-41A1-81D1-67BDFFCF381B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6670F5FF-CC8B-41A1-81D1-67BDFFCF381B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93F6A408-6B7F-4805-A5AD-A9D10372E042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F6A408-6B7F-4805-A5AD-A9D10372E042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F6A408-6B7F-4805-A5AD-A9D10372E042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F6A408-6B7F-4805-A5AD-A9D10372E042}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F37F0BB3-3EE7-4341-AE15-227C27EEAE06}
+	EndGlobalSection
+EndGlobal

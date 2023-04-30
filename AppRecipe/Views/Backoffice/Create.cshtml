@@ -1,0 +1,48 @@
+﻿@model  User
+@{
+    ViewData["Title"] = "New User";
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/StyleLogin.css">
+
+
+<div class="d-flex justify-content-center">
+<h1>@ViewData["Title"]</h1>
+</div>
+
+<div class="d-flex justify-content-center">
+    <div class="col-md-4">
+        <form asp-controller="Backoffice" asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <!-- Name input -->
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input type="text" asp-for="Name" class="form-control" placeholder="Enter Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+              <!-- Email input -->
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input type="text" asp-for="Email" class="form-control" placeholder="Enter Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <!-- Password input -->
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input type="text" asp-for="Password" class="form-control" placeholder="Enter Password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div> 
+            <br />
+            <!-- Submit button -->
+            <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Create</button>
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<div class="d-flex justify-content-center">
+    <a asp-controller="User" asp-action="ListUsers">Back to List</a>
+</div>
+

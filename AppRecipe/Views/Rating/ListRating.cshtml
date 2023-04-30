@@ -1,0 +1,42 @@
+﻿@model List<Rating>
+
+@{
+    ViewData["Title"] = "Rating List";
+}
+
+<div class="d-flex justify-content-center">
+    <h1>@ViewData["Title"]</h1>
+</div>
+<br />
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Comment</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        @foreach (var rating in Model)
+        {
+            <tr>
+                 <td>@rating.Id</td>
+                <td>@rating.UserName</td>
+                <td>@rating.UserEmail</td>
+                <td>@rating.Comment</td>
+                <td>
+                    <a href="@Url.Action("EditRating", "Rating", new { id = rating.Id })">Edit</a>
+                </td>
+                <td>
+                    <a href="@Url.Action("DeleteRating", "Rating", new { id = rating.Id })" class="delete-user-link">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Backoffice", "Backoffice")" class="btn btn-secondary">Back to Backoffice</a>

@@ -1,0 +1,172 @@
+﻿@model List<Recipe>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/StyleIndex.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the World of Recipes</h1>
+</div>
+<br />
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="list-group">
+                <li class="list-group-item active">Artigos sobre Receitas</li>
+                <li class="list-group-item"><a href="#">Bolos</a></li>
+                <li class="list-group-item"><a href="#">Doces</a></li>
+                <li class="list-group-item"><a href="#">Salgados</a></li>
+            </ul>
+            <br />
+            <br />
+        </div>
+
+        <div class="col-md-9">
+            <div class="d-flex justify-content-center">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" style="width:700px">
+                        <div class="carousel-item active">
+                            <img src="img/carousel01.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="~/img/carousel02.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="~/img/carousel03.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden-focusable">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h3 class="card-header">Top Recipes</h3>
+                </div>
+                <div class="recipe-cards">
+                    @foreach (var recipe in Model.OrderBy(x => Guid.NewGuid()).Take(4))
+                    {
+                        <div class="card border-secondary">
+                            <img class="card-img-top" src="/img/@string.Concat(recipe.Id.ToString("000000"), ".jpg")" alt="Imagem de @recipe.Name">
+                            <div class="card-comment">                                
+                               @* <p class="card-comment-text">@recipe.Name</p>*@
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">@recipe.Name</h5>
+                                <p class="card-text">@recipe.Description</p>
+                            </div>                         
+                            <br>
+                            @*<div class="text-center">                                
+                                <a asp-controller="Rating" asp-action="NewRating" class="btn btn-primary">Comment</a>
+                            </div>*@
+                            <br>
+                            <div class="card-footer text-muted text-center">
+                                Rating
+                            </div>
+                            <div class="card-footer text-muted text-center">
+                                <ul class="avaliacao" id="avaliacao-stars">
+                                 
+                                    <a class="star-icon ativo" id="avaliacao-1" value="1" asp-controller="Rating" asp-action="NewRating"></a>
+                                    <a class="star-icon" id="avaliacao-2" value="2" asp-controller="Rating" asp-action="NewRating"></a>
+                                    <a class="star-icon" id="avaliacao-3" value="3" asp-controller="Rating" asp-action="NewRating"></a>
+                                    <a class="star-icon" id="avaliacao-4" value="4" asp-controller="Rating" asp-action="NewRating"></a>
+                                    <a class="star-icon" id="avaliacao-5" value="5" asp-controller="Rating" asp-action="NewRating"></a>
+                                </ul>
+                            </div>
+                        </div>
+                    }               
+                </div>
+                <br>
+                <div class="container">
+                    <div class="text-center mb-4">
+                        <h3 class="card-header">Recipes News</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card border-secondary h-100" style="margin-top:0">
+                                <img class="card-img-top" src="https://blog.eduk.com.br/wp-content/uploads/2020/02/original-2ad9e2a145ffa3240a8d687dc3197227-925x308.jpeg" alt="Imagem da notícia">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tendências em Sobremesas</h5>
+                                    <p class="card-text">Descubra as tendências mais quentes em sobremesas e aprenda a prepará-las em casa.</p>
+                                    <br />
+                                    <div class="text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <a href="https://blog.eduk.com.br/post/tendencias-na-area-de-confeitaria/" class="btn btn-primary text-center">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-secondary h-100" style="margin-top:0">
+                                <img class="card-img-top" src="https://jasminealimentos.com/wp-content/uploads/2017/08/Como-cozinhar-legumes-1-860x485.jpg" alt="Imagem da notícia">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dicas para Cozinhar Legumes</h5>
+                                    <p class="card-text">Aprenda como preparar legumes de forma deliciosa e saudável com nossas dicas úteis.</p>
+                                    <br />
+                                    <div class="text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <a href="https://jasminealimentos.com/alimentacao/como-cozinhar-legumes-e-outros-alimentos/" class="btn btn-primary">More</a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-secondary h-100" style="margin-top:20px">
+                                <img class="card-img-top" src="https://madebychoices.pt/ezoimgfmt/static.madebychoices.pt/wp-content/uploads/2021/12/7-500x500.png?ezimgfmt=ng:webp/ngcb1" alt="Imagem da notícia">
+                                <div class="card-body">
+                                    <h5 class="card-title">Receitas Vegetarianas</h5>
+                                    <p class="card-text">Experimente estas receitas vegetarianas deliciosas e fáceis de preparar em casa.</p>
+                                    <br />
+                                     <div class="text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <a href="https://www.pingodoce.pt/receitas/coleccoes/receitas-vegetarianas-saborosas/" class="btn btn-primary text-center">More</a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-secondary h-100" style="margin-top:20px">
+                                <img class="card-img-top" src="https://www.pingodoce.pt/wp-content/uploads/2022/11/pate-de-lentilhas-e-cenoura-240x191.jpg" alt="Imagem da notícia">
+                                <div class="card-body">
+                                    <h5 class="card-title">Receitas Vegan</h5>
+                                    <p class="card-text">Experimente estas receitas vegan deliciosas e fáceis de preparar em casa.</p>
+                                    <br />
+                                    <div class="text-center">
+                                        <div class="d-flex justify-content-center">
+                                            <a href="https://www.pingodoce.pt/receitas/coleccoes/receitas-vegan/" class="btn btn-primary text-center">More</a>
+                                        </div>
+                                    </div>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/Rating.js"></script>
+
+
+
+
+
+

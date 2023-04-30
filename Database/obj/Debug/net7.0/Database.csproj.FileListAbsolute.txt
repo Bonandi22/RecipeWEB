@@ -1,0 +1,15 @@
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Database\bin\Debug\net7.0\Database.deps.json
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Database\bin\Debug\net7.0\Database.dll
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Database\bin\Debug\net7.0\Database.pdb
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Database\bin\Debug\net7.0\Common.dll
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Database\bin\Debug\net7.0\Common.pdb
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Database\obj\Debug\net7.0\Database.csproj.AssemblyReference.cache
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Database\obj\Debug\net7.0\Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Database\obj\Debug\net7.0\Database.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Database\obj\Debug\net7.0\Database.AssemblyInfo.cs
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Database\obj\Debug\net7.0\Database.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Database\obj\Debug\net7.0\Database.csproj.CopyComplete
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Database\obj\Debug\net7.0\Database.dll
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Database\obj\Debug\net7.0\refint\Database.dll
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Database\obj\Debug\net7.0\Database.pdb
+C:\Users\DELL\Documents\Projetos\AppRecipe\AppRecipe\Database\obj\Debug\net7.0\ref\Database.dll

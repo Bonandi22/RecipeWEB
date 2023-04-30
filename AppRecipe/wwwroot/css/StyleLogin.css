@@ -1,0 +1,49 @@
+﻿/* Estilo para o formulário de login */
+.form-group {
+  margin-bottom: 20px;
+}
+.control-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;  
+}
+/* Estilo para o botão de login */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+  color: #fff;
+}
+.btn-primary:focus {
+  box-shadow: none;
+  outline: none;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+/* Estilo para o link de registro */
+a {
+  color: #007bff;
+}
+a:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+

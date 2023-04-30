@@ -1,0 +1,55 @@
+﻿@model List<Recipe>
+
+@{
+    ViewData["Title"] = "Recipe List";
+}
+
+<div class="d-flex justify-content-center">
+    <h1>@ViewData["Title"]</h1>
+</div>
+
+<a type="button" class="btn btn-primary" asp-controller="Recipe" asp-action="NewRecipe">Create Recipe</a>
+<br />
+<br />
+
+
+<table class="table">
+    <thead>
+        <tr>
+           @* <th>#</th>*@
+            <th>Name</th>
+            <th>Description</th>
+            <th>PrepationMethod</th>
+            <th>PreparationTime</th>
+           @* <th>Ingredients</th>*@
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        @foreach (var recipe in Model)
+        {
+            <tr>
+                @* <td>@recipe.Id</td>*@
+                <td>@recipe.Name</td>
+                <td>@recipe.Description</td>
+                <td>@recipe.PrepationMethod</td>
+                <td>@recipe.PreparationTime</td>                
+                <td>
+                    <a href="@Url.Action("EditRecipe", "Recipe", new { id = recipe.Id })">Ingredients</a>
+                </td>
+                <td>
+                    <a href="@Url.Action("EditRecipe", "Recipe", new { id = recipe.Id })">Edit</a>
+                </td>
+                <td>
+                    <a href="@Url.Action("DeleteRecipe", "Recipe", new { id = recipe.Id })" class="delete-user-link">Delete</a>
+                </td>
+                <td>
+                    <a href="@Url.Action("Block", "Recipe", new { id = recipe.Id })">Block</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Backoffice", "Backoffice")" class="btn btn-secondary">Back to Backoffice</a>

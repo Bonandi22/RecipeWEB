@@ -1,0 +1,39 @@
+/* Estilos para a seção About Us */
+
+section {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+    section h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    section p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+/* Efeito hover para os parágrafos */
+
+p:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+}

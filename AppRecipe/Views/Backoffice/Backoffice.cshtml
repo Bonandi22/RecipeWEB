@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Backoffice";
+}
+
+<link rel="stylesheet" href="/css/backoffice.css">
+
+<div class="d-flex justify-content-center">
+    <h1>@ViewData["Title"]</h1>
+</div>
+
+<br />
+
+<br />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2 class="d-flex justify-content-center">Users</h2>
+            <br />
+         @*   <p><a asp-action="ListUsers">List users</a></p>*@
+            <p><a asp-controller="User" asp-action="ListUsers">Manager User</a></p>
+         @*   <p><a asp-controller="Backoffice" asp-action="Create">Create user</a></p>
+            <p><a asp-action="EditUser">Edit user</a></p>
+            <p><a asp-action="BlockUser">Block user</a></p>*@
+        </div>
+        <div class="col-md-4">
+            <h2 class="d-flex justify-content-center">Recipes</h2>
+            <br />
+           @* <p><a asp-action="ListRecipes">List recipes</a></p>*@
+            <p><a asp-controller="Recipe" asp-action="ListRecipe">Manager Recipe</a></p>
+            @*<p><a asp-controller="Recipe" asp-action="NewRecipe">Create recipes</a></p>
+            <p><a asp-action="EditRecipe">Edit recipe</a></p>
+            <p><a asp-action="DeleteRecipe">Delete recipe</a></p>*@
+        </div>
+        <div class="col-md-4">
+            <h2 class="d-flex justify-content-center">Comments</h2>
+            <br />
+            <p><a asp-controller="Rating" asp-action="ListRating">Manager comments</a></p>
+           @* <p><a asp-action="DeleteComment">Delete comment</a></p>*@
+        </div>
+    </div>
+</div>
